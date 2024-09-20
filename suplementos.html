@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suplementos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url('fondo.png'); /* imagen de fondo */
+            background-size: cover; /* todo el fondo */
+            background-position: center; /* Centra la imagen */
+            background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+        }
+        h1 {
+            font-size: 3em;
+            color: #fff;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            text-shadow: 3px 10px 10px rgba(249, 6, 6, 0.9);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: #000000(164, 188, 238, 0.9); /* Fondo de la tarjeta con opacidad */
+            border-radius: 60px;
+            overflow: hidden;
+            box-shadow: 0 16px 32px #000000(0, 0, 0, 0,8);
+            transition: box-shadow 0.8s ease;
+            border: 10px solid #000000(164, 188, 238, 0.9); /* Borde para toda la tarjeta */
+        }
+        .card:hover {
+            box-shadow: 0 260px 260px rgba(0, 0, 0, 0.9);
+        }
+        .card img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card-title {
+            font-size: 1.5em;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .card-description {
+            font-size: 1em;
+            color: white;
+            margin-bottom: 60px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: background-color 0.6s ease;
+        }
+        .btn:hover {
+            background-color: rgba(135, 6, 6, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <h1>SUPLEMENTOS FITTNES</h1>
+    <div class="container">
+        <!-- Tarjeta de Proteína -->
+        <div class="card">
+            <img src="proteina.png" alt="Proteína">
+            <div class="card-content">
+                <h2 class="card-title">Proteína</h2>
+                <p class="card-description">La proteína es esencial para el crecimiento muscular y la recuperación. Ideal para post-entrenamiento.</p>
+                <a href="#" class="btn">Comprar Ahora</a>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Creatina -->
+        <div class="card">
+            <img src="creatina.png" alt="Creatina">
+            <div class="card-content">
+                <h2 class="card-title">Creatina</h2>
+                <p class="card-description">La creatina mejora el rendimiento físico en series cortas de alta intensidad. Potencia tu entrenamiento.</p>
+                <a href="#" class="btn">Comprar Ahora</a>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Mass Gainer -->
+        <div class="card">
+            <img src="mass.png" alt="Mass Gainer">
+            <div class="card-content">
+                <h2 class="card-title">Mass Gainer</h2>
+                <p class="card-description">El Mass Gainer es perfecto para quienes buscan aumentar su masa muscular de forma rápida y efectiva.</p>
+                <a href="#" class="btn">Comprar Ahora</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
